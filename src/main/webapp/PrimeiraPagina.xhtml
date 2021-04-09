@@ -5,19 +5,29 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Primeira Pagina</title>
+<title>Meetapp</title>
 </h:head>
 <h:body>
-	<h1>Primeira Pagina JSF</h1>
-	
 	<h:form>
 		<h:panelGrid columns="2">
 		
-			<h:outputText  value="Nome" />
+			<h:outputText  value="Nome do evento" />
+			<h:inputText />
+			
+			<h:outputText  value="Nome da organização" />
+			<h:inputText />
+			
+			<h:outputText  value="Local:" />
+			<h:inputText />
+			
+			<h:outputText  value="Data:" />
+			<h:inputText />
+			
+			<h:outputText  value="Horário" />
 			<h:inputText />
 
 			<h:outputText value="Btn" />
-			<h:commandButton value="Enviar" />
+			<h:commandButton value="Cadastrar" />
 
 			<h:outputText value="Pwd" />
 			<h:inputSecret />

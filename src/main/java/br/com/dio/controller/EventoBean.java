@@ -1,5 +1,7 @@
 package br.com.dio.controller;
 
-public class EventoBean {
+import java.io.Serializable;
+
+public class EventoBean implements Serializable {
 
 }
