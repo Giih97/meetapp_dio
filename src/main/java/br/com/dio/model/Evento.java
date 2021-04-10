@@ -16,7 +16,7 @@ public class Evento implements Serializable {
 		
 	}
 	
-	public Evento (String nome, String organizacao, String local, String data, String hora) {
+	public Evento (String nome, String organizacao, String local, String data, String horario) {
 		super();
 		this.nome = nome;
 		this.organizacao = organizacao;
