@@ -2,12 +2,12 @@ package br.com.dio.controller;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.sun.tools.javac.util.List;
 
 import br.com.dio.model.Evento;
 
@@ -20,10 +20,10 @@ public class EventoBean implements Serializable {
 	@Inject
 	private Evento evento;
 	
-	private ArrayList<Evento> eventos = new ArrayList<Evento>();
+	private List<Evento> eventos = new ArrayList<>();
 	
 	public String adicionarEvento() { // metodo
-		eventos.add(evento);
+		this.eventos.add(evento);
 		System.out.println("Evento" + evento.getNome() + "cadastrado com sucesso");
 		clean();
 		return "";
